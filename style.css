@@ -27,6 +27,7 @@
 .header {
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
   background-color: transparent;
+  /* background-color: white; */
 }
 .container-fluid {
   width: 80%;
@@ -78,11 +79,11 @@
 .navbar-light .navbar-brand {
   color: #fff;
 }
-.navbar-expand-md .navbar-nav .active .nav-link {
+.navbar-expand-lg .navbar-nav .active .nav-link {
   color: #fff;
   opacity: 1;
 }
-.navbar-expand-md .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
   text-transform: uppercase;
   color: #ffffff;
   opacity: 0.8;
@@ -91,7 +92,7 @@
   font-weight: 600;
   padding: 14px 0 10px;
 }
-.navbar-expand-md .navbar-nav .nav-item {
+.navbar-expand-lg .navbar-nav .nav-item {
   padding: 0px 12px;
 }
 .navbar-light .navbar-nav .nav-link:focus,
