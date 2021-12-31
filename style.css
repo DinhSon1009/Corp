@@ -287,7 +287,7 @@ button:focus {
 /* reponsive  */
 @media only screen and (max-width: 1200px) {
   .container-fluid {
-    width: 90%;
+    width: 95%;
   }
 }
 
