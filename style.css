@@ -46,6 +46,7 @@ a {
   line-height: 1.2;
   font-weight: 600;
   margin-right: 0;
+  text-align: left;
 }
 .navbar-brand .logo {
   display: block;
@@ -55,6 +56,7 @@ a {
 }
 .navbar-brand .fa {
   color: var(--primary-color);
+  vertical-align: bottom;
 }
 .search {
   width: 45px;
@@ -74,10 +76,9 @@ a {
   cursor: pointer;
 }
 .moon i {
-  color: transparent;
-  -webkit-text-stroke: 1px #eee;
-  transform: rotate(-30deg);
-  font-size: 1.2rem;
+  color:#eee;
+  transform: rotate(-15deg);
+  font-size: 1.5rem;
 }
 
 .navbar-light .navbar-brand {
