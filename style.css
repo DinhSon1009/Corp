@@ -30,7 +30,7 @@ a {
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
   background-color: transparent;
   /* background-color: white; */
-  transition:all 0.5s;
+  transition: all 0.5s;
 }
 .container-fluid {
   width: 80%;
@@ -76,7 +76,7 @@ a {
   cursor: pointer;
 }
 .moon i {
-  color:#eee;
+  color: #eee;
   transform: rotate(-15deg);
   font-size: 1.5rem;
 }
@@ -84,6 +84,19 @@ a {
 .navbar-light .navbar-brand {
   color: #fff;
 }
+.bi.bi-list {
+  color: wheat;
+  font-size: 20px;
+  padding: 0px;
+  color: #fff;
+  line-height: 25px;
+  border-radius: 0.25rem;
+  -webkit-text-stroke: 1px white;
+}
+.navbar-toggler {
+  background-color: var(--primary-color);
+}
+
 .navbar-expand-lg .navbar-nav .active .nav-link {
   color: #fff;
   opacity: 1;
@@ -292,31 +305,40 @@ button:focus {
   .container-fluid {
     width: 95%;
   }
+  .carousel__item__content {
+    position: absolute;
+    top: 30%;
+    left: calc(2.5% + 16px);
+  }
 }
-@media only screen and (max-width: 576px)
-{
-  *{
+@media only screen and (max-width: 576px) {
+  * {
     font-size: 14px;
   }
-  .carousel img{
+  .carousel img {
     height: 65vh;
   }
-  .carousel__item__content h1{
+  .carousel__item__content h1 {
     font-size: 28px;
     line-height: 1.2;
   }
-  .carousel__item__content p{
+  .carousel__item__content p {
     font-size: 18px;
   }
-  .carousel__item__content button{
+  .carousel__item__content button {
     font-size: 16px;
-    padding:12px 30px;
+    padding: 12px 30px;
     margin-top: 30px;
   }
   .carousel__item__content {
     position: absolute;
     top: 30%;
     left: 1rem;
+  }
+  .carousel__item__content {
+    position: absolute;
+    top: 30%;
+    left: calc(2.5% + 16px);
   }
 }
 
