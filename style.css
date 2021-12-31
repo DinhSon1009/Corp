@@ -30,6 +30,7 @@ a {
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
   background-color: transparent;
   /* background-color: white; */
+  transition:all 0.5s;
 }
 .container-fluid {
   width: 80%;
@@ -38,6 +39,7 @@ a {
 }
 .navbar {
   height: 100px;
+  transition: all 0.5s;
 }
 .navbar-brand {
   font-size: 30px;

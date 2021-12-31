@@ -27,7 +27,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <div class="header fixed-top">
+    <div class="header fixed-top" id="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <a class="navbar-brand" href="#"><span class="fa fa-align-right"></span>
@@ -207,7 +207,7 @@
                             <img class="mt-3" src="./images/c4.jpg" alt="">
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -252,7 +252,51 @@
 
 
     </script>
+    <script>
+         window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            var headerStyle = document.getElementById("header");
+           var navbar = document.getElementsByClassName("navbar")[0];
+           var logo = document.getElementsByClassName("navbar-brand")[0];
+           var customa = document.getElementsByClassName("nav-link");
+           var moon = document.querySelector(".moon i");
 
+
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                headerStyle.style.backgroundColor = "#fff";
+                headerStyle.style.boxShadow = "0px 1px 40px 0px rgb(0 0 0 / 10%)";
+                navbar.style.height="80px";
+                logo.style.color="#3f3a64";
+                moon.style.webkitTextStroke="2px #000"  
+                for(let i=0; i<customa.length;i++)
+                {
+                    if(i)
+                    customa[i].style.color="#3f3a64";
+                    else
+                    customa[i].style.color="#009f4d";
+
+                }
+            }
+            else{
+                headerStyle.style.backgroundColor = "transparent";
+                navbar.style.height="100px";
+                logo.style.color="#fff";
+                moon.style.webkitTextStroke="1.5px #eee"  
+
+                for(let i=0; i<customa.length;i++)
+                {
+                    if(i)
+                    customa[i].style.color="#ffffff";
+                    else
+                    customa[i].style.color="#ffffff";
+
+                }
+
+            }
+            
+        }
+
+    </script>
 </body>
 
 </html>
