@@ -519,6 +519,11 @@ button {
   .container-fluid {
     width: 100%;
   }
+  .carousel__item__content{
+    left:16px;
+    padding-right:16px !important;
+
+  }
   .h1 {
     font-size: 23px;
     line-height: 30px;
@@ -527,9 +532,7 @@ button {
   .services__items {
     margin-top: 0 !important;
   }
-  .col-6-custom{
-    
-  }
+  
 }
 
 /* end reponsive  */
