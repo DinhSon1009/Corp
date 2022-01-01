@@ -440,6 +440,8 @@ button {
     position: absolute;
     top: 30%;
     left: calc(10% + 16px);
+    padding-right: calc(10% + 16px) !important;
+
   }
   .carousel__item__content h1 {
     font-size: 45px;
@@ -474,7 +476,8 @@ button {
   .carousel__item__content {
     position: absolute;
     top: 30%;
-    left: 1rem;
+    left: 16px;
+    padding-right: calc(2.5% + 16px) !important;
   }
   .carousel__item__content {
     position: absolute;
