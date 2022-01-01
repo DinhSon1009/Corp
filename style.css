@@ -508,21 +508,24 @@ button {
     font-weight: 600;
     color: #3f3a64;
   }
+  .about__image__right>img{
+    margin-bottom: 0 !important;
+  }
 }
 @media only screen and (max-width: 384px) {
   .container-fluid {
-    width: 99%;
+    width: 100%;
   }
   .h1 {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 23px;
+    line-height: 30px;
   }
-
-  .col-6-custom {
-    padding: 0 7.5px;
-  }
+ 
   .services__items {
     margin-top: 0 !important;
+  }
+  .col-6-custom{
+    
   }
 }
 
