@@ -347,6 +347,9 @@ button {
   display: block;
   margin: 0 auto;
 }
+.product__icon img{
+  width: 100%;
+}
 .product__title {
   font-size: 22px;
   line-height: 28px;
@@ -385,6 +388,7 @@ button {
   box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
   transform: translateY(-50%);
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 .services__title:hover {
   color: #009f4d !important;
@@ -422,7 +426,30 @@ button {
     left: calc(2.5% + 16px);
   }
 }
+@media only screen and (max-width: 768px){
+  .container-fluid {
+    width: 80%;
+  }
+  .carousel img {
+    height: 720px;
+  }
+  .carousel__item__content {
+    position: absolute;
+    top: 30%;
+    left: calc(10% + 16px);
+  }
+  .carousel__item__content h1 {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+  .carousel__item__content p {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 576px) {
+  .container-fluid {
+    width: 95%;
+  }
   * {
     font-size: 14px;
   }
@@ -450,6 +477,18 @@ button {
     position: absolute;
     top: 30%;
     left: calc(2.5% + 16px);
+  }
+  .product__title {
+    font-size: 18px;
+  }
+  .product__card{
+    padding:1.5em;
+  }
+  .product__icon img {
+    width: 45px;
+  }
+  .h1{
+    font-size: 30px;
   }
 }
 
