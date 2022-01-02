@@ -417,6 +417,62 @@ button {
   color: #009f4d !important;
 }
 /* end services  */
+.gallery {
+  padding: 48px 16px;
+}
+.project__card img {
+  width: 100%;
+  display: block;
+  transition: all 0.5s;
+}
+.project__card {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 calc(100% / 3 - 30px);
+  padding: 0;
+  margin: 0 15px;
+}
+.card__content {
+  position: absolute;
+  left: 10%;
+  bottom: -100%;
+  transition: 0.5s all;
+  text-align: left;
+  padding-right: 20px;
+  z-index: 2;
+}
+.project__card:hover .card__content {
+  bottom: 10%;
+}
+.project__card:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.card__content h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.card__content p {
+  font-size: 18px;
+  color: #eee;
+  display: block;
+}
+.project__card::after{
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29,42,55,0.7);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.project__card:hover::after{
+  opacity: 1;
+}
 
 /* reponsive  */
 @media only screen and (max-width: 1200px) {
@@ -427,6 +483,9 @@ button {
     position: absolute;
     top: 30%;
     left: calc(2.5% + 16px);
+  }
+  .project__card {
+    flex: 0 0 calc(100% / 2 - 30px);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -441,7 +500,6 @@ button {
     top: 30%;
     left: calc(10% + 16px);
     padding-right: calc(10% + 16px) !important;
-
   }
   .carousel__item__content h1 {
     font-size: 45px;
@@ -449,6 +507,9 @@ button {
   }
   .carousel__item__content p {
     font-size: 18px;
+  }
+  .project__card {
+    flex: 0 0 calc(100%  - 30px);
   }
 }
 @media only screen and (max-width: 576px) {
@@ -511,28 +572,27 @@ button {
     font-weight: 600;
     color: #3f3a64;
   }
-  .about__image__right>img{
+  .about__image__right > img {
     margin-bottom: 0 !important;
   }
+  
 }
 @media only screen and (max-width: 384px) {
   .container-fluid {
     width: 100%;
   }
-  .carousel__item__content{
-    left:16px;
-    padding-right:16px !important;
-
+  .carousel__item__content {
+    left: 16px;
+    padding-right: 16px !important;
   }
   .h1 {
     font-size: 23px;
     line-height: 30px;
   }
- 
+
   .services__items {
     margin-top: 0 !important;
   }
-  
 }
 
 /* end reponsive  */
