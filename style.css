@@ -417,8 +417,11 @@ button {
   color: #009f4d !important;
 }
 /* end services  */
+
+/* start gallery  */
 .gallery {
   padding: 48px 16px;
+  background-color: #f8f9fa;
 }
 .project__card img {
   width: 100%;
@@ -473,6 +476,17 @@ button {
 .project__card:hover::after{
   opacity: 1;
 }
+.gallery__icon{
+  border-top: 1px solid #eee;
+}
+.gallery__icon img{
+  width: 100%;
+  display: block;
+  padding: 0 18px;
+}
+
+
+/* end gallery  */
 
 /* reponsive  */
 @media only screen and (max-width: 1200px) {
