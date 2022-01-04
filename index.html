@@ -37,11 +37,11 @@
 
 
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <!-- <span class="navbar-toggler-icon"></span> -->
-                    <!-- <span class=" fa icon-close fa-times"></span> -->
+                    <span class=" fa icon-close fa-times"></span>
                     <i class="bi bi-list"></i>
                 </button>
 
@@ -335,7 +335,7 @@
 
                     <img src="./images/c2.jpg" alt="">
                     <div class="card__content">
-                        <h4>Project 1</h4>
+                        <h4>Project 2</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
@@ -343,14 +343,14 @@
 
                     <img src="./images/c3.jpg" alt="">
                     <div class="card__content">
-                        <h4>Project 1</h4>
+                        <h4>Project 3</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
                 <div class="col-lg-6   project__card mb-4">
                     <img src="./images/c4.jpg" alt="">
                     <div class="card__content">
-                        <h4>Project 1</h4>
+                        <h4>Project 4</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
@@ -358,7 +358,7 @@
 
                     <img src="./images/c5.jpg" alt="">
                     <div class="card__content">
-                        <h4>Project 1</h4>
+                        <h4>Project 5</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
@@ -366,7 +366,7 @@
 
                     <img src="./images/c6.jpg" alt="">
                     <div class="card__content">
-                        <h4>Project 1</h4>
+                        <h4>Project 6</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
@@ -439,27 +439,44 @@
 
     </script>
     <script>
+
         window.onscroll = function () { scrollFunction() };
         function scrollFunction() {
+            var collapse = document.getElementsByClassName("navbar-collapse")[0]
+            let width = document.body.offsetWidth;
             var headerStyle = document.getElementById("header");
             var navbar = document.getElementsByClassName("navbar")[0];
             var logo = document.getElementsByClassName("navbar-brand")[0];
             var customa = document.getElementsByClassName("nav-link");
             var moon = document.querySelector(".moon i");
-
-
+            var dropDown = document.getElementsByClassName("dropdown-item")
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 headerStyle.style.backgroundColor = "#fff";
                 headerStyle.style.boxShadow = "0px 1px 40px 0px rgb(0 0 0 / 10%)";
                 navbar.style.height = "80px";
                 logo.style.color = "#3f3a64";
-                moon.style.color = "#000"
-                for (let i = 0; i < customa.length; i++) {
-                    if (i)
-                        customa[i].style.color = "#3f3a64";
-                    else
-                        customa[i].style.color = "#009f4d";
+                moon.style.color = "#000";
 
+                if (width < 992) {
+                    collapse.style.marginTop = "10px"
+                    collapse.style.backgroundColor = "white"
+                    for (let a of dropDown) {
+                        a.style.color = "#3f3a64"
+                    }
+                    for (let i = 0; i < customa.length; i++) {
+                        if (i)
+                            customa[i].style.color = "black";
+                        else
+                            customa[i].style.color = "#009f4d";
+                    }
+                }
+                else {
+                    for (let i = 0; i < customa.length; i++) {
+                        if (i)
+                            customa[i].style.color = "#3f3a64";
+                        else
+                            customa[i].style.color = "#009f4d";
+                    }
                 }
             }
             else {
@@ -467,6 +484,16 @@
                 navbar.style.height = "100px";
                 logo.style.color = "#fff";
                 moon.style.color = " #eee"
+
+                if (width < 992) {
+                    for (let a of dropDown) {
+                        a.style.color = "white"
+                    }
+                    collapse.style.marginTop = "30px"
+                    collapse.style.backgroundColor = "rgba(0, 0, 0, 0.7)"
+
+                }
+
 
                 for (let i = 0; i < customa.length; i++) {
                     if (i)

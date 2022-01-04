@@ -27,17 +27,16 @@ a {
 .header {
   border-bottom: 1px solid rgba(231, 231, 231, 0.18);
   background-color: transparent;
-  /* background-color: white; */
   transition: all 0.5s;
 }
 .container-fluid {
   width: 80%;
-  /* width: 78.9239%; */
   padding: 0;
 }
 .navbar {
   height: 100px;
   transition: all 0.5s;
+  position: relative;
 }
 .navbar-brand {
   font-size: 30px;
@@ -120,6 +119,9 @@ a {
 .navbar-light .navbar-brand:hover {
   color: #fff;
 }
+.navbar-nav .dropdown-menu {
+  background-color: white;
+}
 .dropdown-item {
   text-transform: uppercase;
   font-size: 15px;
@@ -127,6 +129,36 @@ a {
   color: #3f3a64;
   opacity: 0.8;
   font-weight: 600;
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.icon-close {
+  color: white;
+}
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar .navbar-toggler .icon-close {
+  display: block;
+}
+.navbar .navbar-toggler.collapsed .icon-close {
+  display: none;
+}
+
+.navbar .navbar-toggler:not(.collapsed) .bi.bi-list {
+  display: none;
+}
+.navbar .navbar-toggler.collapsed .bi.bi-list {
+  display: block;
 }
 
 /* end header  */
@@ -180,7 +212,6 @@ path {
   bottom: 42px;
   right: 1rem;
   z-index: 1000;
-  /* bottom: 50px; */
 }
 .prev,
 .next {
@@ -249,9 +280,7 @@ button:focus {
 .about {
   padding: 48px 16px;
 }
-.about__left {
-  /* margin-left: 1rem; */
-}
+
 .span {
   font-size: 14px;
   font-weight: 600;
@@ -416,7 +445,7 @@ button {
 .services__content a:last-child:hover {
   color: #009f4d !important;
 }
-.services__card:hover.services__card>.services__content>.services__title{
+.services__card:hover.services__card > .services__content > .services__title {
   color: #009f4d !important;
 }
 
@@ -492,6 +521,8 @@ button {
 /* end gallery  */
 
 /* reponsive  */
+@media only screen and (min-width: 1200px) {
+}
 @media only screen and (max-width: 1200px) {
   .container-fluid {
     width: 95%;
@@ -504,10 +535,65 @@ button {
   .project__card {
     flex: 0 0 calc(100% / 2 - 30px);
   }
+  .show .form-inline {
+    right: calc(2.5% + 100px);
+  }
 }
+@media only screen and (min-width: 992px) {
+  .dropdown-item {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 6px 20px;
+    color: #3f3a64 !important;
+    opacity: 0.8;
+    font-weight: 600;
+  }
+  .show {
+    background-color: transparent;
+  }
+  .navbar-collapse {
+    margin-top: 0px !important;
+    transition: all 0.5s;
+    background-color: transparent !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navbar-nav .dropdown-menu {
+    background-color: transparent;
+  }
+  .search {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .navbar-collapse ul li a {
+    color: white;
+  }
+  .show .form-inline {
+    /* display: none; */
+    position: absolute;
+    top: 40px;
+    right: calc(2.5% + 100px);
+  }
+  .navbar-collapse {
+    margin-top: 30px;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100vw;
+    padding-top: 100px;
+    top: -50%;
+    left: calc(-2.5%);
+    z-index: -1;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container-fluid {
     width: 80%;
+  }
+  .show .form-inline {
+    right: calc(10% + 100px);
   }
   .carousel img {
     height: 720px;
@@ -528,10 +614,21 @@ button {
   .project__card {
     flex: 0 0 calc(100% - 30px);
   }
+  .navbar-collapse {
+    top: -50%;
+    left: calc(-10% - 16px);
+  }
 }
 @media only screen and (max-width: 576px) {
   .container-fluid {
     width: 95%;
+  }
+  .show .form-inline {
+    right: calc(2.5% + 100px);
+  }
+  .navbar-collapse {
+    top: -50%;
+    left: calc(-2.5%);
   }
   * {
     font-size: 14px;
@@ -566,9 +663,9 @@ button {
     font-size: 18px;
     margin: 15px 0 7px;
   }
-  .col-6-custom {
+  /* .col-6-custom {
     padding: 0 7.5px;
-  }
+  } */
   .product__card {
     padding: 1.5em;
     height: calc(100% - 15px);
@@ -596,6 +693,14 @@ button {
 @media only screen and (max-width: 384px) {
   .container-fluid {
     width: 100%;
+  }
+
+  .show .form-inline {
+    right: calc(0% + 50px);
+  }
+  .navbar-collapse {
+    top: -50%;
+    left: 0;
   }
   .carousel__item__content {
     left: 16px;
