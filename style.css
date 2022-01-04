@@ -135,7 +135,6 @@ a {
   justify-content: center;
 }
 .show {
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
@@ -558,8 +557,24 @@ button {
   }
 }
 @media only screen and (max-width: 991px) {
-  .navbar-nav .dropdown-menu {
+  .navbar-nav {
+    width: 80%;
+    text-align: center;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
     background-color: transparent;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.63);
+  }
+  .dropdown-item{
+    padding: 6px 20px;
+    width: 50%;
+    display:block;
+    transition: all 0.3s;
+    margin:0 auto;
+  }
+  .dropdown-item:hover{
+    background-color: rgba(238, 238, 238, 0.473);
   }
   .search {
     width: 40px;

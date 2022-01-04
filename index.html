@@ -450,6 +450,8 @@
             var customa = document.getElementsByClassName("nav-link");
             var moon = document.querySelector(".moon i");
             var dropDown = document.getElementsByClassName("dropdown-item")
+            var dropMenu = document.getElementsByClassName("dropdown-menu")[0]
+
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 headerStyle.style.backgroundColor = "#fff";
                 headerStyle.style.boxShadow = "0px 1px 40px 0px rgb(0 0 0 / 10%)";
@@ -460,6 +462,7 @@
                 if (width < 992) {
                     collapse.style.marginTop = "10px"
                     collapse.style.backgroundColor = "white"
+                    dropMenu.style.border = "1px solid #ccc"
                     for (let a of dropDown) {
                         a.style.color = "#3f3a64"
                     }
@@ -486,6 +489,8 @@
                 moon.style.color = " #eee"
 
                 if (width < 992) {
+                    dropMenu.style.border = "1px solid rgba(255, 255, 255, 0.63)"
+
                     for (let a of dropDown) {
                         a.style.color = "white"
                     }
