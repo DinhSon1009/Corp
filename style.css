@@ -570,8 +570,6 @@ button {
   top: 50%;
   border-radius: 50%;
   transform: translate(50%, -50%);
-  height: 13px;
-  width: 13px;
   border: 3px solid;
   background-color: white;
 }
@@ -608,11 +606,13 @@ button {
 .success .h1 {
   margin-bottom: 24px;
 }
-
+.progress__bar:last-child {
+  margin: 0;
+}
 /* end success  */
 
 /* //testimonial  */
-.testimonial{
+.testimonial {
   background-color: #f8f9fa;
 }
 .testimonial-content {
@@ -627,7 +627,7 @@ button {
 .testimonial-content h1 {
   margin-bottom: 48px;
 }
-.testimonial-content span{
+.testimonial-content span {
   margin-bottom: 4px;
 }
 .testimonial-comment {
@@ -695,22 +695,33 @@ button {
 }
 .swiper-pagination {
   bottom: 0;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  margin-top: 24px;
+}
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
   background-color: #213364;
   transition: 0.3s all;
   width: 10px;
   height: 10px;
   margin: 5px 8px;
-  display:block;
-  padding:6px 6px;
+  display: block;
+  padding: 6px 6px;
   border-radius: 50%;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   transform: scale(1.5);
+}
+.testimonial{
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /* end testimonial  */
 
