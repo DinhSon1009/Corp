@@ -611,6 +611,109 @@ button {
 
 /* end success  */
 
+/* //testimonial  */
+.testimonial{
+  background-color: #f8f9fa;
+}
+.testimonial-content {
+  max-width: 1199px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.testimonial-content h1 {
+  margin-bottom: 48px;
+}
+.testimonial-content span{
+  margin-bottom: 4px;
+}
+.testimonial-comment {
+  min-height: 300px;
+  width: 100%;
+}
+.testimonial-comment .swiper-wrapper {
+  padding-bottom: 20px;
+}
+.testimonial-thumbs .testimonial-pic {
+  padding: 30px 0 0;
+  transition: all 0.5s;
+}
+.testimonial-thumbs .swiper-slide-thumb-active .testimonial-pic {
+  padding: 0 0 40px;
+}
+.testimonial-text {
+  display: block;
+  padding: 40px 30px;
+  position: relative;
+  border: none;
+  max-width: 900px;
+  margin: auto;
+}
+.testimonial-quote {
+  font-size: 18px;
+  line-height: 28px;
+  color: #666;
+  opacity: 0.8;
+}
+.testimonial__image {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50%;
+}
+.testimonial__image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.testimonial__name {
+  text-align: left;
+  margin-left: 20px;
+}
+.testimonial__name h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.testimonial__name span {
+  opacity: 0.8;
+  font-size: 17px;
+  line-height: 27px;
+  color: #666;
+}
+.testimonial__btm {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-pagination {
+  bottom: 0;
+  display:flex;
+  justify-content: center;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  background-color: #213364;
+  transition: 0.3s all;
+  width: 10px;
+  height: 10px;
+  margin: 5px 8px;
+  display:block;
+  padding:6px 6px;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active{
+  transform: scale(1.5);
+}
+/* end testimonial  */
+
 /* reponsive  */
 @media only screen and (min-width: 1200px) {
 }

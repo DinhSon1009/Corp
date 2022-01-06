@@ -6,3 +6,17 @@ lightGallery(document.getElementById("gallery-container"), {
   speed: 500,
   plugins: [lgZoom],
 });
+
+var testimonialContent = new Swiper(".testimonial-comment", {
+  spaceBetween: 10,
+  autoplay: true,
+  loop: true,
+  speed: 500,
+  thumbs: {
+    swiper: testimonialContent
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
+});
