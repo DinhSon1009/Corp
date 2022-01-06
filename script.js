@@ -13,10 +13,10 @@ var testimonialContent = new Swiper(".testimonial-comment", {
   loop: true,
   speed: 500,
   thumbs: {
-    swiper: testimonialContent
+    swiper: testimonialContent,
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true
-  }
+    clickable: true,
+  },
 });

@@ -697,15 +697,11 @@ button {
   bottom: 0;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  margin-top: 24px;
-}
-.swiper-container-horizontal
-  > .swiper-pagination-bullets
-  .swiper-pagination-bullet {
+
+
+.swiper-pagination-clickable .swiper-pagination-bullet{
   background-color: #213364;
   transition: 0.3s all;
   width: 10px;
@@ -722,6 +718,9 @@ button {
 .testimonial{
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.testimonial-text{
+  margin-bottom: 30px;
 }
 /* end testimonial  */
 
@@ -743,7 +742,16 @@ button {
   .show .form-inline {
     right: calc(2.5% + 100px);
   }
+  .h1{
+    font-size: 30px;
+    line-height: 40px;
 }
+.progress__bar{
+  margin-bottom: 20px;
+}
+}
+
+
 @media only screen and (min-width: 992px) {
   .dropdown-item {
     text-transform: uppercase;
