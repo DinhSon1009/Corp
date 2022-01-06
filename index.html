@@ -21,6 +21,8 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css'>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -323,15 +325,15 @@
                 <h1 class="h1">Successful projects we've done
                 </h1>
             </div>
-            <div class="row gallery__items ">
-                <div class="col-lg-6  project__card mb-4">
+            <div class="row gallery__items " id="gallery-container">
+                <div class="col-lg-6  project__card mb-4" data-src="./images/c1.jpg">
                     <img src="./images/c1.jpg" alt="">
                     <div class="card__content">
                         <h4>Project 1</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
                     </div>
                 </div>
-                <div class="col-lg-6  project__card mb-4">
+                <div class="col-lg-6  project__card mb-4" data-src="./images/c2.jpg">
 
                     <img src="./images/c2.jpg" alt="">
                     <div class="card__content">
@@ -339,22 +341,23 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
-                <div class="col-lg-6  project__card mb-4">
-
-                    <img src="./images/c3.jpg" alt="">
+                <div class="col-lg-6  project__card mb-4" data-src="./images/c3.jpg">
+                    <a href="" data-src="./images/c3.jpg" class="item">
+                        <img src="./images/c3.jpg" alt="">
+                    </a>
                     <div class="card__content">
                         <h4>Project 3</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
-                <div class="col-lg-6   project__card mb-4">
+                <div class="col-lg-6   project__card mb-4" data-src="./images/c4.jpg">
                     <img src="./images/c4.jpg" alt="">
                     <div class="card__content">
                         <h4>Project 4</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
-                <div class="col-lg-6  project__card mb-4">
+                <div class="col-lg-6  project__card mb-4" data-src="./images/c5.jpg">
 
                     <img src="./images/c5.jpg" alt="">
                     <div class="card__content">
@@ -362,7 +365,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicin</p>
                     </div>
                 </div>
-                <div class="col-lg-6  project__card mb-4">
+                <div class="col-lg-6  project__card mb-4" data-src="./images/c6.jpg">
 
                     <img src="./images/c6.jpg" alt="">
                     <div class="card__content">
@@ -394,9 +397,68 @@
         </div>
     </div>
 
+    <div class="success">
+        <div class="container-fluid py-lg-5 py-md-3 text-center">
+            <div class="row">
+                <div class="col-lg-6 success__left">
+                    <img src="./images/about.jpg" alt="">
+                </div>
+                <div class="col-lg-6 success__right text-left">
+                    <span class="span">YOUR SUCCESS IS OUR SUCCESS
+                    </span>
+                    <h1 class="h1">Web design, marketing & SEO solutions that get results</h1>
+                    <div class="progress__bar">
+                        <div class="progress__name progress__name-1">
+                            Marketing
+                            <span>80%</span>
+                        </div>
+                        <div class="progress__full">
+                            <div class="progress__percent progress__percent-1">
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress__bar">
+                        <div class="progress__name progress__name-2">
+                            Responsive Web design <span>95%</span>
 
+                        </div>
+                        <div class="progress__full">
+                            <div class="progress__percent progress__percent-2">
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress__bar">
+                        <div class="progress__name progress__name-3">
+
+                            Analytics
+                            <span>60%</span>
+
+                        </div>
+                        <div class="progress__full">
+                            <div class="progress__percent progress__percent-3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress__bar">
+                        <div class="progress__name progress__name-4">
+                            Web Development
+
+                            <span>85%</span>
+
+                        </div>
+                        <div class="progress__full">
+                            <div class="progress__percent progress__percent-4">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -419,6 +481,8 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="./slick-animation.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js'></script>
+    <script type="module" src="./script.js"></script>
     <!-- slick carousel  -->
     <script>
 
