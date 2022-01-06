@@ -20,7 +20,9 @@ a {
   --animate-duration: 800ms;
   --animate-delay: 0.9s;
 }
-
+.wrapper {
+  padding: 48px 16px;
+}
 /* end animation root */
 
 /* start header  */
@@ -276,9 +278,6 @@ button:focus {
 /* end carousel  */
 
 /* start about  */
-.about {
-  padding: 48px 16px;
-}
 
 .span {
   font-size: 14px;
@@ -332,7 +331,6 @@ button:focus {
 
 /* start product  */
 .product {
-  padding: 48px 16px;
   background-color: #f7f7f7;
 }
 .product__button {
@@ -396,9 +394,7 @@ button {
 /* end product  */
 
 /* start services  */
-.services {
-  padding: 48px 16px;
-}
+
 .services__image img {
   display: block;
   width: 100%;
@@ -452,7 +448,6 @@ button {
 
 /* start gallery  */
 .gallery {
-  padding: 48px 16px;
   background-color: #f8f9fa;
 }
 .project__card img {
@@ -460,6 +455,7 @@ button {
   display: block;
   transition: all 0.5s;
 }
+
 .project__card {
   position: relative;
   overflow: hidden;
@@ -515,7 +511,6 @@ button {
   width: 100%;
   display: block;
   padding: 0 18px;
-  /* opacity: 1; */
   transition: 500ms ease-in;
 }
 
@@ -610,9 +605,10 @@ button {
   text-align: left;
   position: relative;
 }
-.success .h1{
+.success .h1 {
   margin-bottom: 24px;
 }
+
 /* end success  */
 
 /* reponsive  */
@@ -774,9 +770,7 @@ button {
     font-size: 18px;
     margin: 15px 0 7px;
   }
-  /* .col-6-custom {
-    padding: 0 7.5px;
-  } */
+
   .product__card {
     padding: 1.5em;
     height: calc(100% - 15px);
