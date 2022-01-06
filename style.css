@@ -852,6 +852,18 @@ button {
   .container-fluid {
     width: 95%;
   }
+ .product .col-6-custom:nth-last-of-type(2n){
+  padding-right: 7.5px;
+ }
+ .about__right .col-6-custom:nth-last-of-type(2n){
+  padding-right: 7.5px;
+ }
+ .about__right .col-6-custom:nth-last-of-type(2n+1){
+  padding-left: 7.5px;
+ }
+ .product .col-6-custom:nth-last-of-type(2n+1){
+  padding-left: 7.5px;
+ }
   .show .form-inline {
     right: calc(2.5% + 100px);
   }
