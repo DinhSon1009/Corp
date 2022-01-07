@@ -735,15 +735,17 @@ button {
 }
 .card__image{
   width: 100%;
+  overflow: hidden;
 }
 .card__image img{
   display: block;
   width: 100%;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
+  transition: 0.3s;
 }
 .card__image img:hover{
-  /* transform: scale(1.5); */
+  transform: scale(1.1);
 }
 .card__body .card__title {
   font-weight: 400;
@@ -766,6 +768,9 @@ button {
 .card__footer {
   padding: 12px 20px;
   border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .card__footer span {
   color: #666;
@@ -793,7 +798,12 @@ button {
   display:flex;
   flex-direction: column;
 }
-
+.card__body-content,.card__footer a{
+  transition: all 0.5s;
+}
+.news__card .card__body-content:hover,.card__footer a:hover{
+  color:#009f4d;
+}
 /* end news  */
 
 /* reponsive  */
@@ -932,6 +942,7 @@ button {
     flex-direction: column;
     flex:1;
   }
+ 
 }
 @media only screen and (max-width: 576px) {
   .container-fluid {
