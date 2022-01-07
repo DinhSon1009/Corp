@@ -237,7 +237,7 @@ button:focus {
 }
 .carousel__item__content {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: calc(10% + 16px);
 }
 .carousel__item__content h1 {
@@ -1098,12 +1098,10 @@ button {
     margin-top: 48px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .container-fluid {
     width: 95%;
   }
-
   .show .form-inline {
     right: calc(2.5% + 100px);
   }
