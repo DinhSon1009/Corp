@@ -1081,9 +1081,6 @@ button {
   .product__icon img {
     width: 45px;
   }
-
-  .product__right .row .col-6 {
-  }
   .h1 {
     font-size: 30px;
   }
@@ -1099,6 +1096,12 @@ button {
   }
   .about__image__right > img {
     margin-bottom: 0 !important;
+  }
+  .testimonial-content h1 {
+    margin-bottom: 24px;
+  }
+  .testimonial-text{
+    padding: 20px 0;
   }
 }
 @media only screen and (max-width: 384px) {
