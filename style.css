@@ -909,8 +909,8 @@ button {
   line-height: 28px;
   transition: all 0.5s;
 }
-.footer__icon a:hover{
-  color:#fff;
+.footer__icon a:hover {
+  color: #fff;
   opacity: 1;
 }
 .footer__title {
@@ -1111,7 +1111,7 @@ button {
   .carousel__item__content {
     position: absolute;
     top: 30%;
-    left: calc(10% + 16px);
+    left: calc(2.5% + 16px);
     padding-right: calc(2.5% + 16px) !important;
   }
   .carousel__item__content h1 {
