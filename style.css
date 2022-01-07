@@ -907,6 +907,11 @@ button {
   color: #97a1a9;
   opacity: 0.6;
   line-height: 28px;
+  transition: all 0.5s;
+}
+.footer__icon a:hover{
+  color:#fff;
+  opacity: 1;
 }
 .footer__title {
   font-size: 22px;
