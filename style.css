@@ -819,10 +819,10 @@ button {
 
 @media only screen and (max-width: 768px) {
   .container-fluid {
-    width: 80%;
+    width: 95%;
   }
   .show .form-inline {
-    right: calc(10% + 100px);
+    right: calc(2.5% + 100px);
   }
   .carousel img {
     height: 720px;
@@ -831,7 +831,7 @@ button {
     position: absolute;
     top: 30%;
     left: calc(10% + 16px);
-    padding-right: calc(10% + 16px) !important;
+    padding-right: calc(2.5% + 16px) !important;
   }
   .carousel__item__content h1 {
     font-size: 45px;
@@ -845,7 +845,7 @@ button {
   }
   .navbar-collapse {
     top: -50%;
-    left: calc(-10% - 16px);
+    left: calc(-2.5% - 16px);
   }
 }
 @media only screen and (max-width: 576px) {
@@ -906,11 +906,14 @@ button {
   }
 
   .product__card {
-    padding: 1.5em;
+    padding: 32px 16px;
     height: calc(100% - 15px);
   }
   .product__icon img {
     width: 45px;
+  }
+  
+  .product__right .row .col-6{
   }
   .h1 {
     font-size: 30px;
