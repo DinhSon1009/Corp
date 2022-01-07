@@ -973,6 +973,7 @@ button {
   .container-fluid {
     width: 95%;
   }
+
   .show .form-inline {
     right: calc(2.5% + 100px);
   }
@@ -1012,6 +1013,9 @@ button {
     display: flex;
     flex-direction: column;
     flex: 1;
+  }
+  .subcribe p {
+    padding-right: 0px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1100,8 +1104,14 @@ button {
   .testimonial-content h1 {
     margin-bottom: 24px;
   }
-  .testimonial-text{
+  .testimonial-text {
     padding: 20px 0;
+  }
+  .subcribe__form button{
+    padding:0 20px;
+  }
+  .form__icon{
+    padding: 0 12px;
   }
 }
 @media only screen and (max-width: 384px) {
