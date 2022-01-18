@@ -1018,6 +1018,9 @@ button {
   .project__card {
     flex: 0 0 calc(100% / 2 - 30px);
   }
+  .product__title{
+    font-size: 21px;
+  }
   .show .form-inline {
     right: calc(2.5% + 100px);
   }
