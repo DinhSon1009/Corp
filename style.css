@@ -1008,18 +1008,18 @@ button {
 }
 @media only screen and (max-width: 1200px) {
   .container-fluid {
-    width: 80%;
+    width: 95%;
   }
   .carousel__item__content {
     position: absolute;
     top: 30%;
-    left: calc(10% + 16px);
+    left: calc(2.5% + 16px);
   }
   .project__card {
     flex: 0 0 calc(100% / 2 - 30px);
   }
   .show .form-inline {
-    right: calc(10% + 100px);
+    right: calc(2.5% + 100px);
   }
   .h1 {
     font-size: 30px;
