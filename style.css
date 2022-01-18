@@ -8,10 +8,20 @@
 
 :root {
   --primary-color: #009f4d;
+  --bg-color: #fff;
+  --heading-color: #3f3a64;
+  --bg-dark: #f7f7f7;
+  --border-color: transparent;
+  --bg-lightgrey: #f8f9fa;
+  --border-color-light: #eee;
+  --font-color: #666;
 }
 a {
   outline: none;
   text-decoration: none !important;
+}
+body {
+  background-color: var(--bg-color);
 }
 /* animation root  */
 
@@ -39,6 +49,7 @@ a {
   height: 100px;
   transition: all 0.5s;
   position: relative;
+  z-index: 1;
 }
 .navbar-brand {
   font-size: 30px;
@@ -79,8 +90,11 @@ a {
   color: #eee;
   transform: rotate(-15deg);
   font-size: 1.5rem;
+  z-index: 9999;
 }
-
+.fa-sun {
+  display: none;
+}
 .navbar-light .navbar-brand {
   color: #fff;
 }
@@ -123,13 +137,13 @@ a {
   color: #fff;
 }
 .navbar-nav .dropdown-menu {
-  background-color: white;
+  background-color: var(--bg-color);
 }
 .dropdown-item {
   text-transform: uppercase;
   font-size: 15px;
   padding: 6px 20px;
-  color: #3f3a64;
+  color: var(--heading-color);
   opacity: 0.8;
   font-weight: 600;
 }
@@ -207,7 +221,7 @@ a {
   width: 100%;
 }
 path {
-  fill: #fff;
+  fill: var(--bg-color);
 }
 .carousel__button {
   position: absolute;
@@ -222,11 +236,12 @@ path {
   border-radius: 50%;
   box-shadow: 0 0 15px rgb(0 0 0 / 12%);
   border: none;
-  background-color: #fff;
+  background-color: var(--bg-color);
   outline: none;
   text-align: center;
   margin: 0.5rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--border-color);
+  color: var(--heading-color);
 }
 .prev i,
 .next i {
@@ -292,12 +307,13 @@ button:focus {
 .p {
   font-size: 17px;
   line-height: 27px;
-  color: #666;
+  /* color: #666; */
+  color: var(--font-color);
   opacity: 0.8;
   margin-top: 1.5rem;
 }
 .h1 {
-  color: #3f3a64;
+  color: var(--heading-color);
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
@@ -316,7 +332,7 @@ button:focus {
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
-  color: #3f3a64;
+  color: var(--heading-color);
 }
 .about__left ul li a span {
   margin-right: 5px;
@@ -333,6 +349,7 @@ button:focus {
 /* start product  */
 .product {
   background-color: #f7f7f7;
+  background-color: var(--bg-dark);
 }
 .product__button {
   margin-top: 2rem;
@@ -359,7 +376,8 @@ button {
   border-radius: 0.5rem;
   text-align: center;
   box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--bg-color);
   transition: 0.3s all;
   height: 100%;
   /* height: 100%; */
@@ -386,7 +404,7 @@ button {
   font-weight: 600;
   margin-top: 25px;
   display: block;
-  color: #3f3a64;
+  color: var(--heading-color);
 }
 .product__title:hover {
   color: var(--primary-color);
@@ -410,10 +428,10 @@ button {
   font-size: 19px;
   line-height: 28px;
   font-weight: 600;
-  color: #3f3a64;
-  background-color: #fff;
+  color: var(--heading-color) !important;
+  background-color: var(--bg-color);
   padding: 12px 35px;
-  border: 1px solid transparent;
+  border: 1px solid var(--border-color);
   box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
   transform: translateY(-50%);
   cursor: pointer;
@@ -424,7 +442,8 @@ button {
   margin-top: -10px;
   font-size: 17px;
   line-height: 27px;
-  color: #666;
+  /* color: #666; */
+  color: var(--font-color);
   opacity: 0.8;
 }
 .services__content a:last-child {
@@ -432,7 +451,7 @@ button {
   font-size: 16px;
   line-height: 28px;
   font-weight: 600;
-  color: #3f3a64;
+  color: var(--heading-color);
   border-radius: 0.5rem;
   border: 1px solid transparent;
   display: block;
@@ -449,7 +468,8 @@ button {
 
 /* start gallery  */
 .gallery {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background-color: var(--bg-lightgrey);
 }
 .project__card img {
   width: 100%;
@@ -506,7 +526,7 @@ button {
   opacity: 1;
 }
 .gallery__icon {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color-light);
 }
 .gallery__icon img {
   width: 100%;
@@ -578,7 +598,8 @@ button {
 }
 .progress__full {
   width: 100%;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
+  background-color: var(--bg-dark);
   border-radius: 0.25rem;
 }
 .progress__name {
@@ -586,6 +607,7 @@ button {
   justify-content: space-between;
   font-size: 18px;
   color: #3f3a64;
+  color: var(--heading-color);
   margin-bottom: 10px;
   font-weight: 400;
 }
@@ -616,7 +638,8 @@ button {
 
 /* //testimonial  */
 .testimonial {
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
+  background-color: var(--bg-lightgrey);
 }
 .testimonial-content {
   max-width: 1199px;
@@ -658,7 +681,8 @@ button {
 .testimonial-quote {
   font-size: 18px;
   line-height: 28px;
-  color: #666;
+  /* color: #666; */
+  color: var(--font-color);
   opacity: 0.8;
 }
 .testimonial__image {
@@ -683,12 +707,14 @@ button {
   margin: 0;
   font-weight: 600;
   font-size: 20px;
+  color:var(--heading-color);
 }
 .testimonial__name span {
   opacity: 0.8;
   font-size: 17px;
   line-height: 27px;
-  color: #666;
+  /* color: #666; */
+  color: var(--font-color);
 }
 .testimonial__btm {
   margin-top: 24px;
@@ -730,6 +756,7 @@ button {
 .news__card {
   text-align: left;
   box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
+  border:1px solid var(--border-color);
 }
 .news .h1 {
   margin-bottom: 48px;
@@ -759,6 +786,7 @@ button {
   line-height: 28px;
   font-weight: 600;
   color: #3f3a64;
+  color: var(--heading-color);
   margin-top: 10px;
 }
 .card__body {
@@ -768,13 +796,14 @@ button {
 }
 .card__footer {
   padding: 12px 20px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .card__footer span {
-  color: #666;
+  /* color: #666; */
+  color: var(--font-color);
   font-size: 15px;
   font-weight: 600;
   opacity: 0.6;
@@ -782,6 +811,7 @@ button {
 .card__footer a {
   font-size: 16px;
   color: #3f3a64;
+  color: var(--heading-color);
   font-weight: 600;
   line-height: 26px;
   text-transform: capitalize;
@@ -805,7 +835,8 @@ button {
 }
 .news__card .card__body-content:hover,
 .card__footer a:hover {
-  color: #009f4d;
+  /* color: #009f4d; */
+  color: var(--primary-color);
 }
 /* end news  */
 
@@ -1018,7 +1049,7 @@ button {
   .project__card {
     flex: 0 0 calc(100% / 2 - 30px);
   }
-  .product__title{
+  .product__title {
     font-size: 21px;
   }
   .show .form-inline {
@@ -1039,6 +1070,7 @@ button {
     font-size: 15px;
     padding: 6px 20px;
     color: #3f3a64 !important;
+    color: var(--heading-color) !important;
     opacity: 0.8;
     font-weight: 600;
   }
@@ -1233,6 +1265,7 @@ button {
     line-height: 27px;
     font-weight: 600;
     color: #3f3a64;
+    color: var(--heading-color);
   }
   .about__image__right > img {
     margin-bottom: 0 !important;

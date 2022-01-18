@@ -83,6 +83,7 @@
                         </div>
                         <div class="moon">
                             <i class="fa fa-moon"></i>
+                            <i class="fa fa-sun"></i>
                         </div>
                     </form>
                 </div>
@@ -758,33 +759,37 @@
             var dropDown = document.getElementsByClassName("dropdown-item")
             var dropMenu = document.getElementsByClassName("dropdown-menu")[0]
 
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                headerStyle.style.backgroundColor = "#fff";
+            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+                headerStyle.style.backgroundColor = "var(--bg-color)";
                 headerStyle.style.boxShadow = "0px 1px 40px 0px rgb(0 0 0 / 10%)";
                 navbar.style.height = "80px";
-                logo.style.color = "#3f3a64";
+                // logo.style.color = "#3f3a64";
+                logo.style.color = "var(--heading-color)";
                 moon.style.color = "#000";
 
                 if (width < 992) {
-                    collapse.style.marginTop = "10px"
-                    collapse.style.backgroundColor = "white"
-                    dropMenu.style.border = "1px solid #ccc"
+                    collapse.style.marginTop = "10px";
+                    collapse.style.backgroundColor = "var(--bg-color)";
+                    dropMenu.style.border = "1px solid #ccc";
                     for (let a of dropDown) {
-                        a.style.color = "#3f3a64"
+                        a.style.color = "var( --heading-color)";
                     }
                     for (let i = 0; i < customa.length; i++) {
                         if (i)
-                            customa[i].style.color = "black";
+                            // customa[i].style.color = "black";
+                            customa[i].style.color = "var(--heading-color)";
                         else
-                            customa[i].style.color = "#009f4d";
+                            customa[i].style.color = "var(--primary-color)";
                     }
                 }
                 else {
                     for (let i = 0; i < customa.length; i++) {
                         if (i)
-                            customa[i].style.color = "#3f3a64";
+                            customa[i].style.color = "var(--heading-color)";
+                            // customa[i].style.color = "#3f3a64";
+
                         else
-                            customa[i].style.color = "#009f4d";
+                            customa[i].style.color = "var(--primary-color)";
                     }
                 }
             }
@@ -792,25 +797,24 @@
                 headerStyle.style.backgroundColor = "transparent";
                 navbar.style.height = "100px";
                 logo.style.color = "#fff";
-                moon.style.color = " #eee"
-
+                moon.style.color = "#eee";
                 if (width < 992) {
-                    dropMenu.style.border = "1px solid rgba(255, 255, 255, 0.63)"
+                    dropMenu.style.border = "1px solid rgba(255, 255, 255, 0.63)";
 
                     for (let a of dropDown) {
-                        a.style.color = "white"
+                        a.style.color = "white";
                     }
-                    collapse.style.marginTop = "30px"
-                    collapse.style.backgroundColor = "rgba(0, 0, 0, 0.7)"
+                    collapse.style.marginTop = "30px";
+                    collapse.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
 
                 }
 
 
                 for (let i = 0; i < customa.length; i++) {
-                    if (i)
+                    // if (i)
                         customa[i].style.color = "#ffffff";
-                    else
-                        customa[i].style.color = "#ffffff";
+                    // else
+                    //     customa[i].style.color = "#ffffff";
 
                 }
 
@@ -819,9 +823,9 @@
         }
 
     </script>
-       <script src="./back-to-top-master/assets/js/main.js"></script>
+    <script src="./back-to-top-master/assets/js/main.js"></script>
 
-       <script src="./back-to-top-master/assets/js/util.js"></script>
+    <script src="./back-to-top-master/assets/js/util.js"></script>
 </body>
 
 </html>
