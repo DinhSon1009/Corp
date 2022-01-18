@@ -109,6 +109,7 @@ body {
 }
 .navbar-toggler {
   background-color: var(--primary-color);
+  transition: all 0.3s;
 }
 
 .navbar-expand-lg .navbar-nav .active .nav-link {
@@ -150,6 +151,7 @@ body {
 .navbar-collapse {
   display: flex;
   justify-content: center;
+  transition: all 0.5s;
 }
 .show {
   align-items: center;
@@ -707,7 +709,7 @@ button {
   margin: 0;
   font-weight: 600;
   font-size: 20px;
-  color:var(--heading-color);
+  color: var(--heading-color);
 }
 .testimonial__name span {
   opacity: 0.8;
@@ -756,7 +758,7 @@ button {
 .news__card {
   text-align: left;
   box-shadow: 0 25px 98px 0 rgb(0 0 0 / 4%);
-  border:1px solid var(--border-color);
+  border: 1px solid var(--border-color);
 }
 .news .h1 {
   margin-bottom: 48px;
@@ -1052,6 +1054,11 @@ button {
   .product__title {
     font-size: 21px;
   }
+  .form-inline {
+    position: absolute;
+    top: -1000px;
+    transition: all 0.3s;
+  }
   .show .form-inline {
     right: calc(2.5% + 100px);
   }
@@ -1079,7 +1086,6 @@ button {
   }
   .navbar-collapse {
     margin-top: 0px !important;
-    transition: all 0.5s;
     background-color: transparent !important;
   }
 }
@@ -1111,22 +1117,24 @@ button {
   .navbar-collapse ul li a {
     color: white;
   }
+
   .show .form-inline {
-    /* display: none; */
     position: absolute;
     top: 40px;
     right: calc(2.5% + 100px);
   }
   .navbar-collapse {
     margin-top: 30px;
-    transition: all 0.5s;
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     width: 100vw;
     padding-top: 100px;
-    top: -50%;
+    top: -300%;
     left: calc(-2.5%);
     z-index: -1;
+  }
+  .navbar-collapse.show{
+    top:-50%;
   }
   .footer-3,
   .footer-4 {
@@ -1161,7 +1169,7 @@ button {
   }
   .navbar-collapse {
     top: -50%;
-    left: calc(-2.5% - 16px);
+    left: calc(-2.5%);
   }
   .news .row .col-lg-4 {
     display: flex;
@@ -1208,10 +1216,7 @@ button {
   .show .form-inline {
     right: calc(2.5% + 100px);
   }
-  .navbar-collapse {
-    top: -50%;
-    left: calc(-2.5%);
-  }
+
   * {
     font-size: 14px;
   }
@@ -1307,6 +1312,9 @@ button {
 
   .services__items {
     margin-top: 0 !important;
+  }
+  .product__button {
+    padding: 12px 30px;
   }
 }
 
