@@ -151,7 +151,7 @@ body {
 .navbar-collapse {
   display: flex;
   justify-content: center;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .show {
   align-items: center;
@@ -1054,14 +1054,7 @@ button {
   .product__title {
     font-size: 21px;
   }
-  .form-inline {
-    position: absolute;
-    top: -1000px;
-    transition: all 0.3s;
-  }
-  .show .form-inline {
-    right: calc(2.5% + 100px);
-  }
+
   .h1 {
     font-size: 30px;
     line-height: 40px;
@@ -1117,11 +1110,14 @@ button {
   .navbar-collapse ul li a {
     color: white;
   }
-
-  .show .form-inline {
+  .form-inline {
     position: absolute;
-    top: 40px;
+    top: -1000px;
     right: calc(2.5% + 100px);
+    transition: all 0.3s;
+  }
+  .show .form-inline {
+    top: 40px;
   }
   .navbar-collapse {
     margin-top: 30px;
@@ -1129,7 +1125,7 @@ button {
     position: absolute;
     width: 100vw;
     padding-top: 100px;
-    top: -300%;
+    top: -500%;
     left: calc(-2.5%);
     z-index: -1;
   }
@@ -1139,6 +1135,9 @@ button {
   .footer-3,
   .footer-4 {
     margin-top: 48px;
+  }
+  .navbar-toggler{
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1167,8 +1166,7 @@ button {
   .project__card {
     flex: 0 0 calc(100% - 30px);
   }
-  .navbar-collapse {
-    top: -50%;
+  .navbar-collapse.show{
     left: calc(-2.5%);
   }
   .news .row .col-lg-4 {
@@ -1200,6 +1198,9 @@ button {
   }
   .news .h1 {
     margin-bottom: 24px;
+  }
+  .navbar-brand{
+    font-size: 26px;
   }
   .product .col-6-custom:nth-last-of-type(2n) {
     padding-right: 7.5px;
@@ -1288,17 +1289,19 @@ button {
     padding: 0 12px;
     font-size: 15px;
   }
+  .moon i{
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 384px) {
   .container-fluid {
     width: 100%;
   }
-
   .show .form-inline {
-    right: calc(0% + 50px);
+    right: calc(0% + 70px);
   }
-  .navbar-collapse {
-    top: -50%;
+ 
+  .navbar-collapse.show {
     left: 0;
   }
   .carousel__item__content {
